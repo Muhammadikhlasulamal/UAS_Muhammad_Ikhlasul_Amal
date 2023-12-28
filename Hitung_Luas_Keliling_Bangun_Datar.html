@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tes.css">
+    <title>Hitung Luas dan Keliling</title>
+</head>
+<body background="Matematika.jpg">
+    <div class="container">
+        <h2>Luas dan Keliling Bangun Datar</h2>
+        
+        <label for="shape">Pilih Bangun Datar:</label>
+        <select id="shape">
+            <option value="rectangle">Persegi Panjang</option>
+            <option value="square">Bujur Sangkar</option>
+            <option value="circle">Lingkaran</option>
+        </select>
+
+        <div id="rectangle-inputs" class="shape-inputs">
+            <label for="length">Panjang:</label>
+            <input type="number" id="length" placeholder="Panjang">
+            
+            <label for="width">Lebar:</label>
+            <input type="number" id="width" placeholder="Lebar">
+        </div>
+
+        <div id="square-inputs" class="shape-inputs">
+            <label for="side">Sisi:</label>
+            <input type="number" id="side" placeholder="Sisi">
+        </div>
+
+        <div id="circle-inputs" class="shape-inputs">
+            <label for="radius">Jari-jari:</label>
+            <input type="number" id="radius" placeholder="Jari-jari">
+        </div>
+
+        <div class="result">
+            <label for="result-area">Luas:</label>
+            <span id="result-area">0</span>
+
+            <label for="result-perimeter">Keliling:</label>
+            <span id="result-perimeter">0</span>
+        </div>
+
+        <button onclick="calculate()">Hitung</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+    <script src="tes.js"></script>
+</body>
+</html>
